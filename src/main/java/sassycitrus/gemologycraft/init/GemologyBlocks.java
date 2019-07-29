@@ -14,7 +14,12 @@ public class GemologyBlocks
 {
     public static HashMap<String, Block> BLOCKS = new HashMap<String, Block>();
 
+    public static Block ORE_AMETHYST = registerBlock("ore_amethyst", new BlockOreGem());
+    public static Block ORE_SAPPHIRE = registerBlock("ore_sapphire", new BlockOreGem());
     public static Block ORE_RUBY = registerBlock("ore_ruby", new BlockOreGem());
+
+    public static Block AMETHYST_BLOCK = registerBlock("amethyst_block", new BlockStorageMetal());
+    public static Block SAPPHIRE_BLOCK = registerBlock("sapphire_block", new BlockStorageMetal());
     public static Block RUBY_BLOCK = registerBlock("ruby_block", new BlockStorageMetal());
 
     private static Block registerBlock(String name, Block block)
