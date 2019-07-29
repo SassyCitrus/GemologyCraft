@@ -7,7 +7,6 @@ import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -19,7 +18,6 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import sassycitrus.gemologycraft.init.GemologyBlocks;
 import sassycitrus.gemologycraft.init.GemologyItems;
 
-// The value here should match an entry in the META-INF/mods.toml file
 @Mod(GemologyCraft.MODID)
 public class GemologyCraft
 {
@@ -32,7 +30,7 @@ public class GemologyCraft
         @Override
         public ItemStack createIcon()
         {
-            return new ItemStack(Items.DIAMOND);
+            return new ItemStack(GemologyItems.GEM_RUBY);
         }
     };
 
