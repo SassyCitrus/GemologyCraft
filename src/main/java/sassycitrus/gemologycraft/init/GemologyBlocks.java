@@ -3,17 +3,19 @@ package sassycitrus.gemologycraft.init;
 import java.util.HashMap;
 
 import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraftforge.registries.IForgeRegistry;
 import sassycitrus.gemologycraft.GemologyCraft;
+import sassycitrus.gemologycraft.block.BlockOreGem;
+import sassycitrus.gemologycraft.block.BlockStorageMetal;
 
 public class GemologyBlocks
 {
     public static HashMap<String, Block> BLOCKS = new HashMap<String, Block>();
 
-    public static Block ORE_RUBY = registerBlock("ore_ruby", new Block(Block.Properties.create(Material.ROCK)));
+    public static Block ORE_RUBY = registerBlock("ore_ruby", new BlockOreGem());
+    public static Block RUBY_BLOCK = registerBlock("ruby_block", new BlockStorageMetal());
 
     private static Block registerBlock(String name, Block block)
     {
