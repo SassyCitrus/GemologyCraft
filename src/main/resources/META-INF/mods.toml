@@ -1,0 +1,29 @@
+modLoader="javafml"
+loaderVersion="[28,)"
+issueTrackerURL="https://github.com/SassyCitrus/GemologyCraft/issues"
+
+[[mods]]
+modId="gemologycraft"
+version="${version}"
+displayName="GemologyCraft"
+displayURL="https://github.com/SassyCitrus/GemologyCraft"
+logoFile="logo.png"
+authors="tryton-vanmeer"
+description='''
+A Minecraft mod about gems and crafting useful trinkets with them.
+'''
+
+[[dependencies.gemologycraft]]
+    # the modid of the dependency
+    modId="forge"
+    mandatory=true
+    versionRange="[28,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.gemologycraft]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.14.4]"
+    ordering="NONE"
+    side="BOTH"
