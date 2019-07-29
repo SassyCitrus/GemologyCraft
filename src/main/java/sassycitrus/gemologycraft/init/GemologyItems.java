@@ -10,6 +10,8 @@ public class GemologyItems
 {
     public static HashMap<String, Item> ITEMS = new HashMap<String, Item>();
 
+    public static Item GEM_RUBY = registerItem("gem_ruby");
+
     private static Item registerItem(String name, Item item)
     {
         ITEMS.put(name, item.setRegistryName(GemologyCraft.MODID + ":" + name));
