@@ -1,0 +1,16 @@
+{
+    "block.gemologycraft.ore_amethyst":   "Amethyst Ore",
+    "block.gemologycraft.ore_ruby":       "Ruby Ore",
+    "block.gemologycraft.ore_sapphire":   "Sapphire Ore",
+    "block.gemologycraft.amethyst_block": "AmethystBlock",
+    "block.gemologycraft.ruby_block":     "Ruby Block",
+    "block.gemologycraft.sapphire_block": "Sapphire Block",
+
+    "item.gemologycraft.gem_amethyst":    "Amethyst",
+    "item.gemologycraft.gem_ruby":        "Ruby",
+    "item.gemologycraft.gem_sapphire":    "Sapphire",
+    "item.gemologycraft.ring_gold":       "Gold Ring",
+    "item.gemologycraft.ring_iron":       "Iron Ring",
+    "item.gemologycraft.amulet_gold":     "Gold Amulet",
+    "item.gemologycraft.amulet_iron":     "Iron Amulet"
+}
