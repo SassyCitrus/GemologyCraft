@@ -1,20 +1,21 @@
 package sassycitrus.gemologycraft.block;
 
+import net.fabricmc.fabric.api.block.FabricBlockSettings;
+import net.fabricmc.fabric.api.tools.FabricToolTags;
 import net.minecraft.block.Block;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.material.Material;
-import net.minecraftforge.common.ToolType;
+import net.minecraft.block.Material;
+import net.minecraft.sound.BlockSoundGroup;
 
 public class BlockStorageMetal extends Block
 {
     public BlockStorageMetal()
     {
         super(
-            Block.Properties.create(Material.IRON)
-            .hardnessAndResistance(3.0F, 5.0F)
-            .harvestTool(ToolType.PICKAXE)
-            .harvestLevel(0)
-            .sound(SoundType.METAL)
+            FabricBlockSettings.of(Material.METAL)
+            .strength(3.0F, 5.0F)
+            .sounds(BlockSoundGroup.METAL)
+            .breakByTool(FabricToolTags.PICKAXES, 0)
+            .build()
         );
     }
 }
