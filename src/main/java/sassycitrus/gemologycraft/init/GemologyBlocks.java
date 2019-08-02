@@ -5,7 +5,8 @@ import java.util.HashMap;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraftforge.registries.IForgeRegistry;
+import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
 import sassycitrus.gemologycraft.GemologyCraft;
 import sassycitrus.gemologycraft.block.BlockOreGem;
 import sassycitrus.gemologycraft.block.BlockStorageMetal;
@@ -24,24 +25,24 @@ public class GemologyBlocks
 
     private static Block registerBlock(String name, Block block)
     {
-        BLOCKS.put(name, block.setRegistryName(GemologyCraft.MODID + ":" + name));
-        return BLOCKS.get(name);
+        BLOCKS.put(name, block);
+        return block;
     }
 
-    public static void register(IForgeRegistry<Block> registry)
+    public static void register()
     {
-        registry.registerAll(
-            BLOCKS.values().toArray(new Block[BLOCKS.size()])
-        );
-    }
-
-    public static void registerItemBlocks(IForgeRegistry<Item> registry)
-    {
-        for (Block block : BLOCKS.values())
+        for (String name : BLOCKS.keySet())
         {
-            registry.register(
-                new BlockItem(block, new Item.Properties().group(GemologyCraft.ItemGroupGemology)).setRegistryName(block.getRegistryName())
-            );
+            Registry.register(Registry.BLOCK, new Identifier(GemologyCraft.MODID, name), BLOCKS.get(name));
+        }
+    }
+
+    public static void registerItemBlocks()
+    {
+        for (String name : BLOCKS.keySet())
+        {
+            BlockItem item = new BlockItem(BLOCKS.get(name), new Item.Settings().group(GemologyCraft.ITEM_GROUP));
+            Registry.register(Registry.ITEM, new Identifier(GemologyCraft.MODID, name), item);
         }
     }
 }
