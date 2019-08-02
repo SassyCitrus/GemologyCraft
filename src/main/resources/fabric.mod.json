@@ -1,0 +1,34 @@
+{
+    "schemaVersion": 1,
+    "id": "gemologycraft",
+    "version": "${version}",
+  
+    "name": "GemologyCraft",
+    "description": "A Minecraft mod about gems and crafting useful trinkets with them.",
+    "authors": [
+      "Tryton Van Meer"
+    ],
+    "contact": {
+      "homepage": "https://github.com/SassyCitrus/GemologyCraft",
+      "sources": "https://github.com/SassyCitrus/GemologyCraft"
+    },
+  
+    "license": "GPLv3",
+    "icon": "assets/gemologycraft/icon.png",
+  
+    "environment": "*",
+    "entrypoints": {
+      "main": [
+        "sassycitrus.gemologycraft.GemologyCraft"
+      ]
+    },
+  
+    "depends": {
+      "fabricloader": ">=0.4.0",
+      "fabric": "*"
+    },
+    "suggests": {
+      "flamingo": "*"
+    }
+  }
+  
