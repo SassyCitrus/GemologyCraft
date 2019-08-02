@@ -1,4 +1,6 @@
 {
+    "itemGroup.gemologycraft.creativetab": "GemologyCraft",
+
     "block.gemologycraft.ore_amethyst":   "Amethyst Ore",
     "block.gemologycraft.ore_ruby":       "Ruby Ore",
     "block.gemologycraft.ore_sapphire":   "Sapphire Ore",
