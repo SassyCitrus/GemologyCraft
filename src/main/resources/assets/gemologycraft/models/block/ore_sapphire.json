@@ -1,6 +1,6 @@
 {
     "parent": "block/cube_all",
     "textures": {
-        "all": "gemologycraft:blocks/ore_sapphire"
+        "all": "gemologycraft:blocks/ore/sapphire"
     }
 }
